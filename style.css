@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background-color: hsl(0, 0%, 95%);
+	margin: 0;
+	padding: 0;
+}
+
+.card {
+	border-radius: 0.8rem;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	margin: 10em 5em;
+}
+
+h2 {
+	color: hsl(0, 0%, 95%);
+	font-family: 'Big Shoulders Display', sans-serif;
+	font-size: 4rem;
+	text-transform: uppercase;
+	padding-block: 0.5em;
+}
+
+p {
+	color: hsla(0, 0%, 100%, 0.75);
+	font-family: 'Lexend Deca', sans-serif;
+	font-size: 1.5rem;
+	line-height: 1.75em;
+	padding-bottom: 3em;
+}
+
+.sedan,
+.suv,
+.luxury {
+	padding: 7em;
+}
+
+.sedan {
+	background-color: hsl(31, 77%, 52%);
+}
+
+.suv {
+	background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+	background-color: hsl(179, 100%, 13%);
+}
+
+.learn {
+	border: solid 3px hsl(0, 0%, 95%);
+	border-radius: 3rem;
+	padding: 0.5em 2em;
+	background-color: hsl(0, 0%, 95%);
+	font-family: 'Lexend Deca', sans-serif;
+	font-size: 1.5rem;
+	line-height: 3rem;
+}
+
+.learn:hover {
+	cursor: pointer;
+	border: solid 3px hsla(0, 0%, 100%, 0.75);
+}
+
+.sedan .learn {
+	color: hsl(31, 77%, 52%);
+}
+
+.sedan .learn:hover {
+	background-color: hsl(31, 77%, 52%);
+	color: hsla(0, 0%, 100%, 0.75);
+}
+
+.suv .learn {
+	color: hsl(184, 100%, 22%);
+}
+
+.suv .learn:hover {
+	background-color: hsl(184, 100%, 22%);
+	color: hsla(0, 0%, 100%, 0.75);
+}
+
+.luxury .learn {
+	color: hsl(179, 100%, 13%);
+}
+
+.luxury .learn:hover {
+	background-color: hsl(179, 100%, 13%);
+	color: hsla(0, 0%, 100%, 0.75);
+}
+
+.attribution {
+	margin-block: auto 2vh;
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 800px) {
+	.card {
+		flex-direction: row;
+		justify-content: center;
+		width: 90%;
+		margin-inline: auto;
+	}
+	section {
+		padding: 6%;
+		position: relative;
+	}
+	.learn {
+		margin-top: auto;
+		position: absolute;
+		bottom: 10%;
+	}
+}
