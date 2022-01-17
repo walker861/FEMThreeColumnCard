@@ -5,46 +5,44 @@
 }
 
 html {
-	font-size: 62.5%;
-}
-
-body {
-	background-color: hsl(0, 0%, 95%);
 	margin: 0;
 	padding: 0;
 }
 
+body {
+	background-color: hsl(0, 0%, 95%);
+	font-family: 'Lexend Deca', sans-serif;
+	font-size: 15px;
+}
+
 .card {
-	border-radius: 0.8rem;
+	border-radius: 0.5rem;
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
 	margin-inline: auto;
-	margin-block: 5em auto;
-	width: 375px;
-	max-width: 90%;
+	margin-block: 10% auto;
+	max-width: 21.67em;
+	width: 90%;
 }
 
 h2 {
 	color: hsl(0, 0%, 95%);
 	font-family: 'Big Shoulders Display', sans-serif;
-	font-size: 4rem;
+	font-size: 2.75rem;
 	text-transform: uppercase;
-	padding-block: 0.5em;
 }
 
 p {
 	color: hsla(0, 0%, 100%, 0.75);
-	font-family: 'Lexend Deca', sans-serif;
-	font-size: 1.5rem;
 	line-height: 1.75em;
-	padding-bottom: 3em;
+	padding-bottom: 1.5em;
 }
 
 .sedan,
 .suv,
 .luxury {
-	padding: 7em;
+	padding: 3em;
 }
 
 .sedan {
@@ -62,11 +60,9 @@ p {
 .learn {
 	border: solid 3px hsl(0, 0%, 95%);
 	border-radius: 3rem;
-	padding: 0.5em 2em;
+	padding: 1em 3em;
 	background-color: hsl(0, 0%, 95%);
 	font-family: 'Lexend Deca', sans-serif;
-	font-size: 1.5rem;
-	line-height: 3rem;
 }
 
 .learn:hover {
@@ -115,16 +111,14 @@ p {
 	.card {
 		flex-direction: row;
 		justify-content: center;
-		max-width: 1440px;
+		max-width: 900px;
 		width: 90%;
 	}
 	section {
-		padding: 6%;
+		padding: 6em;
 		position: relative;
 	}
 	.learn {
 		margin-top: auto;
-		position: absolute;
-		bottom: 10%;
 	}
 }
